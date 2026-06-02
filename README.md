@@ -1,116 +1,86 @@
-# CyberLab - Pentesting Lab
+# CyberLab
 
-## Descripción
-
-CyberLab es un laboratorio práctico de ciberseguridad diseñado para desarrollar y demostrar habilidades de pentesting en entornos controlados.
-
-El proyecto documenta paso a paso el proceso completo de una auditoría de seguridad sobre la máquina vulnerable Metasploitable 2 utilizando Kali Linux como sistema atacante.
-
----
+Laboratorio práctico de ciberseguridad enfocado en reconocimiento, enumeración, análisis de vulnerabilidades y explotación controlada sobre entornos vulnerables.
 
 ## Objetivos
 
-* Construir un entorno de pentesting aislado.
-* Realizar reconocimiento y enumeración de servicios.
-* Identificar vulnerabilidades.
-* Validar hallazgos mediante explotación controlada.
-* Documentar todas las fases de la auditoría.
-* Generar evidencia técnica profesional para portafolio.
+* Practicar metodologías de pentesting en entornos controlados.
+* Documentar hallazgos de seguridad de forma profesional.
+* Validar vulnerabilidades conocidas.
+* Construir un portafolio técnico orientado a ciberseguridad.
 
----
-
-## Entorno del Laboratorio
+## Entorno del laboratorio
 
 ### Máquina atacante
 
-* Sistema Operativo: Kali Linux
-* Dirección IP: 192.168.56.102
+* Kali Linux
+* IP: 192.168.56.103
 
 ### Máquina objetivo
 
-* Sistema Operativo: Metasploitable 2
-* Dirección IP: 192.168.56.101
-
-### Topología
-
-```text
-Kali Linux (192.168.56.102)
-            |
-            |
-Metasploitable 2 (192.168.56.101)
-```
-
----
-
-## Herramientas Utilizadas
-
-* VirtualBox
-* Kali Linux
 * Metasploitable 2
-* Nmap
-* Nikto
-* Gobuster
-* Git
-* GitHub
-
----
+* IP: 192.168.56.101
 
 ## Metodología
 
-### Fase 1 - Reconocimiento
+1. Reconocimiento
+2. Enumeración
+3. Análisis de vulnerabilidades
+4. Explotación controlada
+5. Documentación de evidencias
+6. Recomendaciones de mitigación
+
+## Herramientas utilizadas
+
+* Nmap
+* Nikto
+* Gobuster
+* Metasploit Framework
+* Git
+* GitHub
+
+## Documentación
+
+### Reconocimiento y Enumeración
+
+Archivo:
+
+```text
+docs/01-reconocimiento-y-enumeracion.md
+```
+
+Actividades realizadas:
 
 * Descubrimiento de hosts.
-* Identificación de servicios.
-* Enumeración inicial de puertos.
-
-### Fase 2 - Enumeración
-
+* Enumeración de servicios.
+* Identificación de versiones.
 * Enumeración web.
-* Descubrimiento de directorios.
-* Identificación de aplicaciones expuestas.
+* Recolección de evidencias.
 
-### Fase 3 - Análisis de Vulnerabilidades
+### Análisis de Vulnerabilidades
 
-* Evaluación de servicios vulnerables.
-* Revisión de versiones obsoletas.
-* Clasificación de hallazgos.
+Archivo:
 
-### Fase 4 - Explotación Controlada
+```text
+docs/02-analisis-de-vulnerabilidades.md
+```
 
-* Validación de vulnerabilidades.
-* Obtención de acceso inicial.
-* Documentación de evidencias.
-
-### Fase 5 - Post Explotación
-
-* Recolección de información.
-* Enumeración interna.
-* Análisis de impacto.
-
----
+Hallazgos documentados:
+| Vulnerabilidad        | Servicio | Estado   |
+| --------------------- | -------- | -------- |
+| VSFTPD 2.3.4 Backdoor | FTP      | Validada |
 
 ## Evidencias
 
-### Escaneos
+Las capturas de pantalla se encuentran organizadas en:
 
 ```text
-scans/
-├── nmap/
-├── nikto/
-└── gobuster/
+screenshots/explotacion/
 ```
 
-### Capturas
+## Descargo de responsabilidad
 
-```text
-screenshots/
-├── infraestructura/
-├── reconocimiento/
-├── enumeracion/
-├── vulnerabilidades/
-└── explotacion/
-```
-
+Este proyecto se desarrolla únicamente con fines educativos y de investigación en entornos autorizados y controlados.
 ### Documentación
 
 ```text
@@ -131,36 +101,4 @@ Durante la fase de reconocimiento se identificaron múltiples servicios expuesto
 * SSH
 * Telnet
 * SMTP
-* DNS
-* Apache HTTP Server
-* Samba
-* MySQL
-* PostgreSQL
-* Apache Tomcat
-
-Además, se identificaron aplicaciones web accesibles como:
-
-* phpMyAdmin
-* phpinfo.php
-* TWiki
-
----
-
-## Estado Actual
-
-* [x] Infraestructura configurada
-* [x] Descubrimiento de hosts
-* [x] Enumeración de servicios
-* [x] Enumeración web
-* [ ] Análisis de vulnerabilidades
-* [ ] Explotación controlada
-* [ ] Post explotación
-* [ ] Informe final
-
----
-
-## Autor
-
-Juan Diego Chiquillo Pedraza
-
-Proyecto desarrollado con fines educativos y de aprendizaje en ciberseguridad ofensiva dentro de un entorno controlado.
+* DN
