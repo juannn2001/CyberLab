@@ -41,13 +41,11 @@ Laboratorio práctico de ciberseguridad enfocado en reconocimiento, enumeración
 
 ## Documentación
 
-### Reconocimiento y Enumeración
+### Fase 1 - Reconocimiento y Enumeración
 
-Archivo:
+**Archivo:**
 
-```text
-docs/01-reconocimiento-y-enumeracion.md
-```
+`docs/01-reconocimiento-y-enumeracion.md`
 
 Actividades realizadas:
 
@@ -57,15 +55,14 @@ Actividades realizadas:
 * Enumeración web.
 * Recolección de evidencias.
 
-### Análisis de Vulnerabilidades
+### Fase 2 - Análisis de Vulnerabilidades
 
-Archivo:
+**Archivo:**
 
-```text
-docs/02-analisis-de-vulnerabilidades.md
-```
+`docs/02-analisis-de-vulnerabilidades.md`
 
 Hallazgos documentados:
+
 | Vulnerabilidad        | Servicio | Estado   |
 | --------------------- | -------- | -------- |
 | VSFTPD 2.3.4 Backdoor | FTP      | Validada |
@@ -74,31 +71,26 @@ Hallazgos documentados:
 
 Las capturas de pantalla se encuentran organizadas en:
 
-```text
-screenshots/explotacion/
-```
+* screenshots/infraestructura/
+* screenshots/reconocimiento/
+* screenshots/enumeracion/
+* screenshots/explotacion/
+
+## Estado Actual
+
+* [x] Infraestructura configurada
+* [x] Descubrimiento de hosts
+* [x] Enumeración de servicios
+* [x] Enumeración web
+* [x] Análisis de vulnerabilidades
+* [x] Explotación controlada
+* [ ] Post-explotación
+* [ ] Informe final
+
+## Autor
+
+Juan Diego Chiquillo Pedraza
 
 ## Descargo de responsabilidad
 
 Este proyecto se desarrolla únicamente con fines educativos y de investigación en entornos autorizados y controlados.
-### Documentación
-
-```text
-docs/
-├── 01-Reconocimiento-y-Enumeracion.md
-├── 02-Analisis-de-Vulnerabilidades.md
-├── 03-Explotacion-Controlada.md
-└── Informe-Final.md
-```
-
----
-
-## Hallazgos Iniciales
-
-Durante la fase de reconocimiento se identificaron múltiples servicios expuestos, entre ellos:
-
-* FTP
-* SSH
-* Telnet
-* SMTP
-* DN
