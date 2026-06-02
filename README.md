@@ -161,6 +161,6 @@ Además, se identificaron aplicaciones web accesibles como:
 
 ## Autor
 
-Juan Diego
+Juan Diego Chiquillo Pedraza
 
 Proyecto desarrollado con fines educativos y de aprendizaje en ciberseguridad ofensiva dentro de un entorno controlado.
